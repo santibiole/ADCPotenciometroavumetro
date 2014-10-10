@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F401VC -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -ID:\SANTIAGO\Dropbox\Diplomatura SE\Clase 19\TP ADC - Potenciometro a vumetro\cmsis_boot -ID:\SANTIAGO\Dropbox\Diplomatura SE\Clase 19 -ID:\SANTIAGO\Dropbox\Diplomatura SE\Clase 19\TP ADC - Potenciometro a vumetro -ID:\SANTIAGO\Dropbox\Diplomatura SE\Clase 19\TP ADC - Potenciometro a vumetro\bsp -ID:\SANTIAGO\Dropbox\Diplomatura SE\Clase 19\TP ADC - Potenciometro a vumetro\cmsis_lib -ID:\SANTIAGO\Dropbox\Diplomatura SE\Clase 19\TP ADC - Potenciometro a vumetro\cmsis_lib\include -ID:\SANTIAGO\Dropbox\Diplomatura SE\Clase 19\TP ADC - Potenciometro a vumetro\cmsis">
+      <target file="stm32f4xx_gpio.o" lastModified="148f68f6331">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="148f56859b2"/>
+      </target>
+      <target file="stm32f4xx_adc.o" lastModified="148f68f62b2">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_adc.c" lastModified="148f568a75f"/>
+      </target>
+      <target file="stm32f4xx_tim.o" lastModified="148f68f66f2">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_tim.c" lastModified="148f5688bc2"/>
+      </target>
+      <target file="system_stm32f4xx.o" lastModified="148f68f63a8">
+         <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="148f5683fbe"/>
+      </target>
+      <target file="startup_stm32f4xx.o" lastModified="148f68f5f83">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="148f5683fbe"/>
+      </target>
+      <target file="stm32f4xx_exti.o" lastModified="148f68f6522">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_exti.c" lastModified="148f56869cb"/>
+      </target>
+      <target file="stm32f4xx_syscfg.o" lastModified="148f68f5f2d">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_syscfg.c" lastModified="148f5690ec3"/>
+      </target>
+      <target file="main.o" lastModified="148f68f5fcf">
+         <source file="..\..\..\main.c" lastModified="148f68c134e"/>
+      </target>
+      <target file="stm32f4xx_spi.o" lastModified="148f68f643b">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_spi.c" lastModified="148f5687914"/>
+      </target>
+      <target file="stm32f4xx_rcc.o" lastModified="148f68f61bf">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="148f56859a2"/>
+      </target>
+      <target file="misc.o" lastModified="148f68f65de">
+         <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="148f568f503"/>
+      </target>
+      <target file="bsp.o" lastModified="148f68f64b6">
+         <source file="..\..\..\bsp\bsp.c" lastModified="148f68f2693"/>
+      </target>
+   </processor>
+</history>
