@@ -21,17 +21,17 @@ void pulsoLed(uint8_t led, uint32_t tiempo);
  */
 int main(void) {
 	bsp_init();
-	uint16_t pot;
+	uint16_t led;
 	int i;
 
 	while (1) {
 
-		pot = read_adc();
+		led = vumetro();
 
-		for (i=0;i<pot;i++){
+		for (i=0;i<led;i++){
 			led_on(i);
 		}
-		for (i=pot;i<=7;i++){
+		for (i=led;i<=7;i++){
 			led_off(i);
 		}
 	}

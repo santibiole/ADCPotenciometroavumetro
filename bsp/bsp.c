@@ -21,9 +21,12 @@
 #define LED_N GPIO_Pin_13
 #define LED_R GPIO_Pin_14
 #define LED_A GPIO_Pin_15
-#define RANGEXLED 480
 
 #define BOTON GPIO_Pin_0
+
+#define RANGEXLED 480
+#define RES	4095
+#define SFVUM	8.5
 
 /* Puertos de los leds disponibles */
 GPIO_TypeDef* leds_port[] = { GPIOD, GPIOD, GPIOD, GPIOD, GPIOD, GPIOD, GPIOD, GPIOD, GPIOD, GPIOD, GPIOD, GPIOD};
@@ -55,8 +58,6 @@ uint8_t sw_getState(void) {
 	return GPIO_ReadInputDataBit(GPIOA, BOTON);
 }
 
-
-
 void bsp_delay_ms(uint16_t x){
 	bsp_count_ms = x;
 	while (bsp_count_ms);
@@ -73,7 +74,6 @@ void EXTI0_IRQHandler(void) {
 		APP_ISR_sw();
 		//GPIO_ToggleBits(leds_port[1], leds[1]);
 	}
-
 }
 
 /**
@@ -104,6 +104,10 @@ void bsp_init() {
 	bsp_sw_init();
 	bsp_timer_config();
 	bsp_init_adc();
+}
+
+uint16_t vumetro (void){
+	return (read_adc()*SFVUM/RES);
 }
 
 /**
@@ -227,5 +231,5 @@ uint16_t read_adc() {
 	ADC_RegularChannelConfig(ADC1, 12, 1, ADC_SampleTime_15Cycles);
 	ADC_SoftwareStartConv(ADC1);
 	while (ADC_GetFlagStatus(ADC1, ADC_FLAG_EOC) != SET);
-	return (ADC_GetConversionValue(ADC1)/RANGEXLED);
+	return ADC_GetConversionValue(ADC1);
 }

@@ -16,14 +16,14 @@
       <target file="startup_stm32f4xx.o" lastModified="148f68f5f83">
          <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="148f5683fbe"/>
       </target>
-      <target file="stm32f4xx_exti.o" lastModified="148f68f6522">
-         <source file="..\..\..\cmsis_lib\source\stm32f4xx_exti.c" lastModified="148f56869cb"/>
-      </target>
       <target file="stm32f4xx_syscfg.o" lastModified="148f68f5f2d">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_syscfg.c" lastModified="148f5690ec3"/>
       </target>
-      <target file="main.o" lastModified="148f68f5fcf">
-         <source file="..\..\..\main.c" lastModified="148f68c134e"/>
+      <target file="stm32f4xx_exti.o" lastModified="148f68f6522">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_exti.c" lastModified="148f56869cb"/>
+      </target>
+      <target file="main.o" lastModified="148fa0a52d2">
+         <source file="..\..\..\main.c" lastModified="148fa0a4ccb"/>
       </target>
       <target file="stm32f4xx_spi.o" lastModified="148f68f643b">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_spi.c" lastModified="148f5687914"/>
@@ -31,11 +31,11 @@
       <target file="stm32f4xx_rcc.o" lastModified="148f68f61bf">
          <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="148f56859a2"/>
       </target>
+      <target file="bsp.o" lastModified="148fa25a59b">
+         <source file="..\..\..\bsp\bsp.c" lastModified="148fa25a1dd"/>
+      </target>
       <target file="misc.o" lastModified="148f68f65de">
          <source file="..\..\..\cmsis_lib\source\misc.c" lastModified="148f568f503"/>
-      </target>
-      <target file="bsp.o" lastModified="148f68f64b6">
-         <source file="..\..\..\bsp\bsp.c" lastModified="148f68f2693"/>
       </target>
    </processor>
 </history>

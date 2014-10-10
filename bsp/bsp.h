@@ -48,6 +48,11 @@ uint8_t sw_getState();
 uint16_t read_adc();
 
 /**
+ * @brief Valor Potenciometro a Leds
+ */
+uint16_t vumetro();
+
+/**
  * @brief Inicializacion de los servicios de BSP
  */
 void bsp_init();
